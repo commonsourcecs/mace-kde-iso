@@ -14,7 +14,7 @@ Images are built and uploaded in a relatively regular interval to [github releas
 ## sources
 
 - [iso profile](https://github.com/commonsourcecs/iso-profiles/tree/master/community/mace-kde)
-- [desktop settings](https://gitlab.manjaro.org/profiles-and-settings/)
+- [desktop settings](https://gitlab.manjaro.org/profiles-and-settings/manjaro-kde-settings)
 
 ## building
 
