@@ -59,7 +59,7 @@ jobs:
           scope: ${{ matrix.scope }}
           kernel: ${{ matrix.kernel }}
           release-tag: ${{ needs.prepare-release.outputs.release_tag }}
-rollback:
+  rollback:
     runs-on: ubuntu-22.04
     needs: [build-release]
     if: ${{ failure() || cancelled() }}
