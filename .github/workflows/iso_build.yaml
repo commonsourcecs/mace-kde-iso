@@ -24,7 +24,7 @@ jobs:
     needs: [prepare-release]
     strategy:
       matrix:
-        EDITION: [gnome-next]
+        EDITION: [mace-kde]
         BRANCH: [unstable]
         SCOPE: [full, minimal]
     steps:
