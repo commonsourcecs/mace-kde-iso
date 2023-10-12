@@ -34,10 +34,10 @@ jobs:
     continue-on-error: ${{ matrix.experimental }}
     strategy:
       matrix:
-        edition: [sway]
-        branch: [stable]
+        edition: [mace-kde]
+        branch: [unstable]
         scope: [full]
-        experimental: [false]
+        experimental: [true]
         kernel: 
           - ${{ needs.prepare-release.outputs.longterm }}
         include:
