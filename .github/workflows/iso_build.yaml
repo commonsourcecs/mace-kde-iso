@@ -41,6 +41,7 @@ jobs:
         name: image-build-upload
         uses: manjaro/manjaro-iso-action@main
         with:
+          iso-profiles-repo: https://github.com/commonsourcecs/iso-profiles
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
