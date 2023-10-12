@@ -35,15 +35,15 @@ jobs:
     strategy:
       matrix:
         edition: [mace-kde]
-        branch: [unstable]
-        scope: [minimal]
+        branch: [stable]
+        scope: [full]
         experimental: [true]
         kernel: 
           - ${{ needs.prepare-release.outputs.longterm }}
         include:
           - edition: mace-kde
-            branch: stable
-            scope: full
+            branch: unstable
+            scope: minimal
             kernel: ${{ needs.prepare-release.outputs.stable }}
             experimental: true
     steps:
