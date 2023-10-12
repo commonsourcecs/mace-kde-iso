@@ -36,13 +36,13 @@ jobs:
       matrix:
         edition: [mace-kde]
         branch: [unstable]
-        scope: [full]
+        scope: [minimal]
         experimental: [true]
         kernel: 
           - ${{ needs.prepare-release.outputs.longterm }}
         include:
           - edition: mace-kde
-            branch: unstable
+            branch: stable
             scope: full
             kernel: ${{ needs.prepare-release.outputs.stable }}
             experimental: true
